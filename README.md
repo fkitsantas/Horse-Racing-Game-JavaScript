@@ -1,6 +1,6 @@
 # Horse Racing Game (JavaScript) 
 
-[Live Demo](https://fkitsantas.github.io/Horse-Racing-Game-JavaScript/)
+To test or play the game feel free to use my GitHub's: [Live Demo](https://fkitsantas.github.io/Horse-Racing-Game-JavaScript/)
 
 ## Table of Contents
 - [About The Project](#about-the-project)
