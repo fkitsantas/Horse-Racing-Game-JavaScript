@@ -140,6 +140,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	//Event listener to the Start button
 	document.getElementById('start').onclick = function(){
 		amount = parseInt(document.getElementById('amount').value);
+
+		// Check for negative or zero amount
+		if (amount <= 0) {
+			alert('Please enter a positive bet amount.');
+			return;
+		}
+
+		// Check for invalid amount (not a number)
+		if (isNaN(amount)) {
+			alert('Please enter a valid bet amount.');
+			return;
+		}
+
 		num_lap = parseInt(document.getElementById('num_lap').value);
 		bethorse = parseInt(document.getElementById('bethorse').value);
 
@@ -147,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			alert('Not enough funds.');
 		}
 		else if (num_lap <= 0){
-			alert('Number of lap must be greater than 1.');
+			alert('Number of lap must be greater than 0.');
 		}else{
 
 			/*Started the game*/
